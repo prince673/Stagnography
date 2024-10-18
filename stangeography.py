@@ -30,3 +30,5 @@ def extract_data(audio_file):
 audio_file = 'secret_comm.wav'  # Replace with your actual audio file path
 hidden_message = extract_data(audio_file)
 print("Extracted Hidden Message: ", hidden_message)
+
+#CONTRUBUTION IS ALLOWED
