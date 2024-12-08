@@ -1,0 +1,18 @@
+
+2. Place your audio file (e.g., `secret_comm.wav`) in the same directory as the `steganography.py` file.
+
+## Usage
+1. Open the `steganography.py` file and replace `'secret_comm.wav'` with the actual path to your audio file.
+2. Run the `steganography.py` file to extract the hidden data.
+3. The extracted hidden message will be printed to the console.
+
+## How It Works
+The LSB steganography technique works by hiding data in the least significant bits of audio frames. Each audio frame is composed of bytes, and the LSB of each byte is used to store a bit of the hidden message. By manipulating the LSBs, it is possible to encode the hidden data without visibly altering the audio file.
+
+When extracting the hidden data, the LSBs are extracted from the audio frames and grouped into bytes. The byte array is then converted to a string using the `bytearray().decode()` method.
+
+## Contribution
+Feel free to contribute to this project by creating pull requests or reporting issues.
+
+## License
+This project is licensed under the MIT License.
